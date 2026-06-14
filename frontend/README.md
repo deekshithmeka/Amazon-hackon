@@ -167,6 +167,13 @@ src/
 
 There are also legacy shadcn-style helpers at the project root (`components/` and `lib/`) that remain part of the workspace.
 
+## Prerequisites
+
+Before running the app, make sure the following are installed on your system:
+
+- Node.js 20 or later
+- npm
+
 ## Getting Started
 
 ```bash
