@@ -49,14 +49,14 @@ The UI follows a dark Amazon-inspired theme using custom CSS variables and reusa
 
 ## Routes
 
-| Route | Purpose |
-|---|---|
-| `/dashboard` | Live operational overview with KPI cards, charts, and queue data |
-| `/grading` | AI product inspection flow with upload, confidence, grade, and route result |
-| `/routing` | Smart routing center with route recommendations and recovery value |
-| `/fraud` | Fraud detection view with alert cards and side-by-side comparison |
-| `/marketplace` | Buyer matching flow for recovered items |
-| `/lifecycle` | Digital product passport with timeline and sustainability metrics |
+| Route          | Purpose                                                                     |
+| -------------- | --------------------------------------------------------------------------- |
+| `/dashboard`   | Live operational overview with KPI cards, charts, and queue data            |
+| `/grading`     | AI product inspection flow with upload, confidence, grade, and route result |
+| `/routing`     | Smart routing center with route recommendations and recovery value          |
+| `/fraud`       | Fraud detection view with alert cards and side-by-side comparison           |
+| `/marketplace` | Buyer matching flow for recovered items                                     |
+| `/lifecycle`   | Digital product passport with timeline and sustainability metrics           |
 
 ## Data Flow
 
@@ -64,13 +64,13 @@ The current frontend is wired around mock APIs and local mock data.
 
 ### API Routes
 
-| Endpoint | Method | Delay | Purpose |
-|---|---|---:|---|
-| `/api/grade` | POST | 1500ms | Returns grade, confidence, resale value, route, and fraud flag |
-| `/api/route` | POST | 800ms | Returns routing recommendations and recovery impact |
-| `/api/fraud` | POST | 1200ms | Returns fraud probability and case details |
-| `/api/dashboard` | GET | 500ms | Returns dashboard KPIs and weekly activity data |
-| `/api/match` | GET | 2000ms | Returns buyer match list and total matches |
+| Endpoint         | Method |  Delay | Purpose                                                        |
+| ---------------- | ------ | -----: | -------------------------------------------------------------- |
+| `/api/grade`     | POST   | 1500ms | Returns grade, confidence, resale value, route, and fraud flag |
+| `/api/route`     | POST   |  800ms | Returns routing recommendations and recovery impact            |
+| `/api/fraud`     | POST   | 1200ms | Returns fraud probability and case details                     |
+| `/api/dashboard` | GET    |  500ms | Returns dashboard KPIs and weekly activity data                |
+| `/api/match`     | GET    | 2000ms | Returns buyer match list and total matches                     |
 
 ### Service Layer
 
